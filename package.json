@@ -1,0 +1,12 @@
+{
+  "name": "edugenie",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "start": "npm --workspace backend start",
+    "dev": "npm --workspace backend run dev"
+  }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="description" content="EduGenie is your personalized learning workspace for college study.">
+  <title>EduGenie | Your learning desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="app-body">
+  <div class="app-frame">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#/dashboard" aria-label="EduGenie dashboard"><span class="brand-symbol">e</span><span>edugenie<span class="brand-period">.</span></span></a>
+      <p class="sidebar-caption">YOUR LEARNING SPACE</p>
+      <nav id="sidebar-nav" class="sidebar-nav"></nav>
+      <div class="sidebar-bottom"><div class="sidebar-note"><span class="note-orbit" aria-hidden="true">✳</span><p>Small steps.<br><strong>Strong understanding.</strong></p></div><span class="sidebar-version">EDUGENIE · STUDENT EDITION</span></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <a class="brand brand--mobile" href="#/dashboard"><span class="brand-symbol">e</span><span>edugenie<span class="brand-period">.</span></span></a>
+        <div class="topbar-spacer"></div>
+        <span id="sample-data-badge" class="sample-data-badge" hidden>Sample data</span>
+        <button id="search-open" class="icon-button search-button" type="button" aria-label="Search" title="Search (/)" aria-keyshortcuts="/"><span aria-hidden="true">⌕</span></button>
+        <label class="select-wrap"><span class="visually-hidden">Language</span><select id="language-select"></select><span class="select-caret" aria-hidden="true">⌄</span></label>
+        <button id="theme-toggle" class="icon-button theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme"><span class="theme-glyph" aria-hidden="true">◐</span></button>
+        <a id="profile-link" class="profile-chip" href="#/profile"><span class="profile-avatar" aria-hidden="true">E</span><span class="profile-chip-label">Profile</span></a>
+      </header>
+      <main id="page-content" class="page-content" aria-live="polite" aria-busy="false"></main>
+    </div>
+  </div>
+  <nav id="mobile-more-menu" class="mobile-more-menu" aria-label="More sections" hidden></nav>
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Mobile navigation"></nav>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
